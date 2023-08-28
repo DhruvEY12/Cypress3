@@ -11,7 +11,7 @@ pipeline {
         }
         stage('e2e Tests') {
             steps {
-                sh 'npx cypress run --reporter json > python cypress_results_extractor.py > script2.json'
+                sh 'npx cypress run --reporter json'
             }
         }
     }
