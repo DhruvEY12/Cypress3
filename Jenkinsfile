@@ -7,7 +7,7 @@ pipeline {
     
         stage('e2e Tests') {
             steps {
-                sh 'npx cypress run --reporter json'
+                sh 'NO_COLOR=1 npx cypress run --reporter json'
             }
         }
     }
