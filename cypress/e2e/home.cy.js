@@ -7,7 +7,7 @@ describe('SDMS Login Test', () => {
 
     cy.get(':nth-child(3) > .form-control').type('v-ankur.aggarwal')
 
-    cy.get(':nth-child(4) > .form-control').type('dalmia@1234')
+    cy.get(':nth-child(4) > .form-control').type('Earnest#456')
 
     cy.get('.btn').click()
 
@@ -94,6 +94,18 @@ cy.contains('View Scheme').click();
 
 cy.get('button.btn.btn-primary.view[type="button"]').click();
 
+});
+  
+
+it('Scheme Check', () => {
+  cy.visit('https://sdmsuat.dalmiabharat.com/login')
+
+    cy.get(':nth-child(3) > .form-control').type('v-ankur.aggarwal')
+
+    cy.get(':nth-child(4) > .form-control').type('Earnest#456')
+
+    cy.get('.btn').click()
+
 //Filter scheme
 
 cy.get('button.button-class.sm').first().click(); 
@@ -128,3 +140,6 @@ cy.get('button.btn.btn-primary').click();
 });
   
 });
+
+
+
